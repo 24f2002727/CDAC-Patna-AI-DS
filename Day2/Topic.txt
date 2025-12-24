@@ -1,0 +1,4 @@
+Basics of python - A quick recap
+1.File nandelling
+2.Exception handelling
+3.OOP 
