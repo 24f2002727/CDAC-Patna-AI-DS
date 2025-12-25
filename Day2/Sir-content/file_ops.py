@@ -23,7 +23,7 @@ def file_read():
 def with_file_read():
 
     with open("text.txt", "r") as f:
-        con:str = f.readlines()
+        con= f.readlines()
         print(con)
 
 
