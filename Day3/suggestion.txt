@@ -1,0 +1,31 @@
+For regex practice : regexr.com
+
+arrayviz.com - for 3D array visualisation
+
+The formula used by linspace to calculate step is : 
+When endpoint=True (default )
+step = (stop - start )/ (num - 1 )
+
+When endpoint=False
+step = (stop - start )/ num
+
+When we were mixing int and string , the datatype coming was <U21 , even if
+ the the string was of length 1
+
+
+Reason:
+
+Since the type of the int is int64, the max value of unsigned is 18,446,744,073,
+709,551,615. This comes to 20 digit.
+
+when converted to string it's length will be 20 as well, that's why numpy starts 
+with capacity of 21 to accommodate max value when converting to string. 
+
+And that's why <U21 , here 21 is capacity not length, if the inputted string
+length exceed 21 then it's capacity will be equal to the max string length in a array.
+
+Same goes for the float as well, to accommodate the max value of float64 it's initial 
+capacity will be 32 bytes, and if string length exceeds this 32, then max length of 
+string present in the array
+
+*Note: capacity >= size*
