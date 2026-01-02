@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction output</title>
+</head>
+<body>
+    <h1>Hi, {{name}}</h1>
+    {% if output == 0 %}
+        <p>Sorry to say that you may fail</p>
+        <h1>😔</h1>
+    {% elif output == 1 %}
+        <p>Excited to say that you may pass</p>
+        <h1>😊</h1>
+    {% else %}
+        <p>Result unknown</p>
+    {% endif %}
+
+
+
+
+    
+</body>
+</html>
