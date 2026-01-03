@@ -2,13 +2,13 @@
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import MinMaxScaler
+# from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score,confusion_matrix
 
 #data collection
-df=pd.read_csv("data.csv")  #reading the data set
+df=pd.read_csv("/Users/shivamkumar/Desktop/CDAC-Patna-AI-DS/capstone_project/data.csv")  #reading the data set
 print(df.head())
 
 

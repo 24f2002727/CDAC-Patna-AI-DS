@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,42 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Grade predictation model</title>
 </head>
+
 <body>
-    <h1>Hi, I am your AI friend</h1>
-    <h2>I will help you in predicting your result as pass or fail.</h2>
+    <h1 align="center">Hi, I am your AI friend</h1>
+    <h4 align="center">~I will help you in predicting your result as pass or fail.</h2>
 
     <form action="/output" method="POST">
-        <fieldset class="border p-3">
+        <div class="details" id="details style="background-color:red;">
             <legend class="">Study chart</legend>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-            <br>
-            <label for="marks">Recent marks</label>
-            <input type="number" id="marks" name="marks">
-            <br>
-            <label for="attendence">Attendence%</label>
-            <input type="number" id="attendence" name="attendence">
-            <br>
-            <label for="study_hour">Study hour</label>
-            <input type="number" name="study_hour" id="study_hour">
-            <br>
-            <br>
-            <input type="submit" class="btn btn-success" value="Submit">
-        </fieldset>
-
+            <fieldset class="border p-3">
+                <table>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="marks">Recent marks</label></td>
+                        <td><input type="number" id="marks" name="marks"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="attendence">Attendence%</label></td>
+                        <td><input type="number" id="attendence" name="attendence"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="study_hour">Study hour</label></td>
+                        <td><input type="number" name="study_hour" id="study_hour"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" class="btn btn-success" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
     </form>
-    
+
 </body>
+
 </html>
